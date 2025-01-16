@@ -1,0 +1,183 @@
+body{
+    background-color: rgb(0, 1, 23);
+    color: white;
+}
+
+h1{
+    text-align: center;
+}
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navbar .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .navbar .nav-links li a:hover {
+    background: #555;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero .btn {
+    background: #fff;
+    color: #333;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .hero .btn:hover {
+    background: #f3f3f3;
+  }
+  
+  /* Features Section */
+  .features {
+    background: #f9f9f9;
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+  
+  .features h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .feature-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 4rem 1rem;
+    background: #eee;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  /* CTA Section */
+  .cta {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+  }
+  
+  .cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cta p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta .btn {
+    background: #fff;
+    color: #333;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .cta .btn:hover {
+    background: #f3f3f3;
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  

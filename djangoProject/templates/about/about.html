@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="{% static 'about.css' %}">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">MyWebsite</div>
+      <ul class="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Introduction Section -->
+    <section class="intro">
+      <h1>About Us</h1>
+      <p>We are passionate about delivering innovative web solutions that drive success for our clients. Our team of experts is dedicated to providing modern, scalable, and user-friendly experiences.</p>
+    </section>
+
+    <!-- Mission and Vision Section -->
+    <section class="mission-vision">
+      <div class="content">
+        <div class="mission">
+          <h2>Our Mission</h2>
+          <p>To empower businesses with cutting-edge digital solutions that foster growth and innovation.</p>
+        </div>
+        <div class="vision">
+          <h2>Our Vision</h2>
+          <p>To be the leading provider of transformative IT solutions globally, setting the benchmark for innovation and excellence.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+      <h2>Meet Our Team</h2>
+      <div class="team-cards">
+        <div class="card">
+          <img src="https://via.placeholder.com/150" alt="Team Member">
+          <h3>John Doe</h3>
+          <p>CEO & Founder</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/150" alt="Team Member">
+          <h3>Jane Smith</h3>
+          <p>Chief Technology Officer</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/150" alt="Team Member">
+          <h3>David Johnson</h3>
+          <p>Lead Designer</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section id="contact" class="cta">
+      <h2>Work With Us</h2>
+      <p>Want to know more? Contact us to learn how we can help your business succeed.</p>
+      <a href="#contact-form" class="btn">Get in Touch</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MyWebsite. All rights reserved.</p>
+  </footer>
+</body>
+</html>
