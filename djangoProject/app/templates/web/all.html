@@ -1,11 +1,41 @@
 {% extends "layout.html" %}
 
 {% block title %}
-chau Page
+Chai Page
 {% endblock %}
 
 {% block content %}
-<h1 class="bg-orange-700">
-    Welcome to my chai page!
+<h1 class="text-3xl font-bold text-center bg-gradient-to-r from-orange-500 via-red-500 to-yellow-500 text-transparent bg-clip-text py-4">
+    Welcome to my Chai Page!
 </h1>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6 py-8">
+    {% for chai in chais %}
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
+        <!-- Image -->
+        <div class="h-48 w-full bg-gray-200">
+            <img class="h-full w-full object-cover" src="{{ chai.image.url }}" alt="Chai Image">
+        </div>
+
+        <!-- Card Content -->
+        <div class="p-4">
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">{{ chai.name }}</h2>
+            <p class="text-gray-600 text-sm mb-4">{{ chai.type }}</p>
+            <p class="text-lg font-bold text-green-600 mb-4">₹{{ chai.price }}</p>
+
+            <!-- Buttons -->
+            <div class="flex justify-between items-center">
+                <a href="{% url 'detail' chai.id %}" 
+                   class="text-white bg-orange-600 hover:bg-orange-700 px-4 py-2 rounded-lg text-sm font-medium shadow-md transition">
+                    View Details
+                </a>
+                <button 
+                    class="text-white bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg text-sm font-medium shadow-md transition">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
 {% endblock %}
